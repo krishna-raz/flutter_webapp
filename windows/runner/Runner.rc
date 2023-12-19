@@ -90,12 +90,12 @@ BEGIN
         BLOCK "040904e4"
         BEGIN
             VALUE "CompanyName", "com.example" "\0"
-            VALUE "FileDescription", "wezire" "\0"
+            VALUE "FileDescription", "knitkraft" "\0"
             VALUE "FileVersion", VERSION_AS_STRING "\0"
-            VALUE "InternalName", "wezire" "\0"
+            VALUE "InternalName", "knitkraft" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2023 com.example. All rights reserved." "\0"
-            VALUE "OriginalFilename", "wezire.exe" "\0"
-            VALUE "ProductName", "wezire" "\0"
+            VALUE "OriginalFilename", "knitkraft.exe" "\0"
+            VALUE "ProductName", "knitkraft" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END
