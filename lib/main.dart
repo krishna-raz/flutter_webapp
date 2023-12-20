@@ -26,9 +26,7 @@ class WebViewWidget extends StatefulWidget {
 }
 
 class _WebViewWidgetState extends State<WebViewWidget> {
-  final String url =
-      'https://d3c8-2409-40c4-1f-e977-50af-d57e-716f-9ebf.ngrok-free.app/';
-  // final String url = 'https://www.google.com/';
+  final String url = 'https://knitkraft.onrender.com/';
   bool isInternetAvailable = true;
   late WebViewController _webViewController;
 
@@ -40,8 +38,7 @@ class _WebViewWidgetState extends State<WebViewWidget> {
 
   Future<void> checkInternetConnection() async {
     try {
-      final result = await InternetAddress.lookup(
-          'd3c8-2409-40c4-1f-e977-50af-d57e-716f-9ebf.ngrok-free.app');
+      final result = await InternetAddress.lookup('knitkraft.onrender.com');
       if (result.isNotEmpty && result[0].rawAddress.isNotEmpty) {
         setState(() {
           isInternetAvailable = true;
@@ -78,6 +75,7 @@ class _WebViewWidgetState extends State<WebViewWidget> {
               },
               initialUrl: url,
               javascriptMode: JavascriptMode.unrestricted,
+              gestureNavigationEnabled: false, // Disable full-screen rendering
             )
           : const Center(
               child: Text('No Internet'),
